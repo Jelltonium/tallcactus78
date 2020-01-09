@@ -1,0 +1,508 @@
+/*selects the whole document*/
+html {
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*navigation bar styling*/
+
+/*background*/
+.navigation {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate( -50%, 0);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 2.5;
+    background-color: #581a77;
+    top: 0px;
+    border-bottom: 3px solid #ba4fef;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+/*actual buttons*/
+.nav-button.active {
+    background-color: #ba4fef;
+    color: #FFF;
+}
+.nav-button {
+    position: relative;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 1px;
+    white-space: nowrap;
+    color: #FFF;
+    width: 24.7%;
+    vertical-align: middle;
+    
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+.nav-button:hover {
+    background-color: #4597ef;
+}
+
+
+/*background img styling*/
+.home_img {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translate( -50%, 0px);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    filter: brightness(110%);
+}
+
+
+/*main heading*/
+.title {
+    z-index: -1;
+    position: relative;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #FFF;
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    width: 400px;
+}
+
+
+/*Arrow styling and animation*/
+.arrow {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 50%;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transform-origin: top left;
+    transform: rotate(45deg);
+    animation-name: arrowdown;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes arrowdown {
+    0% {transform: rotate(45deg) translate(-10px,-10px);}
+    50% {transform: rotate(45deg) translate(10px,10px);}
+    100% {transform: rotate(45deg) translate(-10px,-10px);}
+}
+
+
+/*main content styling*/
+
+/*background styling*/
+.content-bg {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    top: 70%;
+    background-color: #581a77;
+    min-height: 1500px;
+    overflow: auto;
+    border-top: 3px solid #ba4fef;
+    justify-content: center;
+}
+
+/*MAIN CONTENT*/
+.internal {
+    position: relative;
+    margin: 50px 50px 300px 50px;
+    padding: 20px;
+    text-align: center;
+    color: #FFF;
+    border-radius: 5px;
+}
+.main_text {
+    padding: 10px;
+    margin: 10px;
+    color: #FFF;
+    font-size: 25px;
+}
+
+
+/*shelf image styling*/
+.shelf_img {
+    height: 500px;
+}
+
+
+/*footer styling*/
+.footer {
+    position: absolute;
+    bottom: 0px;
+    height: 120px;
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid #ba4fef;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_button_border {
+    height: 75px;
+    width: 75px;
+    margin: 15px;
+    justify-content: center;
+    border: 3px solid #ba4fef;
+    border-radius: 50%;
+}
+.footer_button_1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.footer_button {
+    height:50%;
+    width:80%;
+    position:relative;
+    top:18px;
+}
+.footer_button_1:hover {
+    background-color: rgb(210,210,255);
+    transform: translate(0px,-15px);
+    box-shadow: 0 10px 20px  -5px grey;
+}
+
+
+/*removes scrollbar*/
+.screen::-webkit-scrollbar {
+ display: none;
+}
+
+
+/*contact us card styling*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 100px 0px 100px;
+}
+.card {
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    background-color: #ba4fef;
+    margin: 20px;
+    height: 200px;
+    width: 600px;
+    border-radius: 10px;
+}
+.card-bar {
+    height: 194px;
+    width: 10%;
+    border-radius: 8px 0px 0px 8px;
+    margin: 3px;
+}
+.card-content {
+    height: 194px;
+    width: calc(90% + 3px);
+    border-radius: 0px 8px 8px 0px;
+    background-color: #581a77;
+    margin: 3px 3px 3px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-bar-text {
+    text-align: center;
+    position: relative;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+    top: 36%;
+    left: 0%;
+    line-height: 1;
+    color: #FFF;
+}
+.card-content-text {
+    margin: 15px;
+    color: #FFF;
+}
+
+
+/*page transition*/
+
+/*sets bounderies within entire page*/
+.screen {
+    overflow: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.screen1 {
+    animation-name: screen;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes screen {
+    0% {z-index: 2;}
+    99% {z-index: 2;}
+    100% {z-index: -2;}
+}
+#screen2 {
+    position: fixed;
+    animation-name: screen1;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+@keyframes screen1 {
+    100% {z-index: 2;}
+}
+
+/*top square animation*/
+.top {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 10000px;
+    height: 10000px;
+    transform: rotate(-135deg);
+    transform-origin: top left;
+    background-color: lightblue;
+}
+.top1 {
+    animation-name: top_square;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes top_square {
+    100% {transform: rotate(-135deg); top:-20px; left: 50%;}
+}
+#top2 {
+    position: fixed;
+    left: 50%;
+    top:-20px;
+    transform: rotate(-135deg);
+    animation-name: top_square_close;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes top_square_close {
+    100% {top: 50%; left: 50%; transform: rotate(-135deg);}
+}
+
+/*left square animation*/
+.left {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 10000px;
+    height: 10000px;
+    transform: rotate(135deg);
+    transform-origin: top left;
+    background-color: lightgreen;
+}
+.left1 {
+    animation-name: left_square;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes left_square {
+    100% {transform: rotate(135deg); top: 50%; left:-20px;}
+}
+#left2 {
+    position: fixed;
+    top: 50%;
+    left:-20px;
+    transform: rotate(135deg);
+    animation-name: left_square_close;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes left_square_close {
+    100% {top: 50%; left: 50%; transform: rotate(135deg);}
+}
+
+/*right square animation*/
+.right {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 10000px;
+    height: 10000px;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    background-color: #ffffaa;
+    z-index:5;
+}
+.right1 {
+    animation-name: right_square;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes right_square {
+    100% {transform: rotate(-45deg); left: calc(100% + 20px); top: 50%;}
+}
+#right2 {
+    position: fixed;
+    top: 50%;
+    left: calc(100% + 20px);
+    transform: rotate(-45deg);
+    animation-name: right_square_close;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes right_square_close {
+    100% {top: 50%; left: 50%; transform: rotate(-45deg);}
+}
+
+/*bottom square animation*/
+.bottom {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 10000px;
+    height: 10000px;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    background-color: pink;
+}
+.bottom1 {
+    animation-name: bottom_square;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes bottom_square {
+    100% {transform: rotate(45deg); left: 50%; top: calc(100% + 20px);}
+}
+#bottom2 {
+    position: fixed;
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: rotate(45deg);
+    animation-name: bottom_square_close;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes bottom_square_close {
+    100% {top: 50%; left: 50%; transform: rotate(45deg);}
+}
+
+/*loading text animation*/
+.load_text {
+    position: relative;
+    top: 80%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    animation-name: loadtext;
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes loadtext {
+    100% {top:150%;}
+}
+#load_text2 {
+    top:150%;
+    animation-name: loadtext_close;
+    animation-delay: 0.4s;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes loadtext_close {
+    100% {top: 80%;}
+}
+
+
+/*Link animation come in from right on start up*/
+.link1 {
+  visibility: hidden;
+  position: relative;
+  animation-name: link1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+@keyframes link1 {
+  0% {left: -100%}
+  100% {left: 0px;visibility: visible;}
+}
+
+.link2 {
+  visibility: hidden;
+  position: relative;
+  animation-name: link2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.75s;
+}
+@keyframes link2 {
+  0% {left: -100%;}
+  100% {left: 0px;visibility: visible;}
+}
+
+.link3 {
+  visibility: hidden;
+  position: relative;
+  animation-name: link3;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+@keyframes link3 {
+  0% {left: -100%;}
+  100% {left: 0px;visibility: visible;}
+}
+
+.link4 {
+  visibility: hidden;
+  position: relative;
+  animation-name: link4;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.25s;
+}
+@keyframes link4 {
+  0% {left: -100%;}
+  100% {left: 0px;visibility: visible;}
+}
+
+
+/*Contact us card animation*/
+.card {
+    border: 0px solid #4597ef;
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.card:hover {
+    background-color: #4597ef;
+    border: 20px solid#581a77;
+    border-radius: 30px;
+    margin: 0px;
+}
