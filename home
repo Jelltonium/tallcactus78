@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="test.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300" rel="stylesheet">
+        <script>
+            function delay (URL) {
+                setTimeout( function() { window.location = URL }, 1500 );
+            }
+            function animation(){
+            document.getElementById('screen').id ='screen2';
+            document.getElementById('top').id ='top2';
+            document.getElementById('left').id ='left2';
+            document.getElementById('right').id ='right2';
+            document.getElementById('bottom').id ='bottom2';
+            document.getElementById('loadtext').id ='load_text2';
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Page animation, navigation bar, and background image -->
+        <div class="screen screen1" id="screen">
+            <div class="top top1" id="top"></div>
+            <div class="left left1" id="left"></div>
+            <div class="right right1" id="right"></div>
+            <div class="bottom bottom1" id="bottom"></div>
+            <p id="loadtext" class="load_text">loading...</p>
+        </div>
+        <div class="navigation">
+            <a href="javascript:delay('home.html')" onclick="animation()" class="link1 nav-button active">Home</a>
+            <a href="javascript:delay('about.html')" onclick="animation()" class="link2 nav-button">About</a>
+            <a href="javascript:delay('documentation.html')" onclick="animation()" class="link3 nav-button">Documentation</a>
+            <a href="javascript:delay('contact_us.html')" onclick="animation()" class="link4 nav-button">Contact Us</a>
+        </div>
+        <img class="home_img" src="Images/background.jpg" alt="background_pink_to_blue">
+        
+        <!-- Main title, content, and footer -->
+        <div class="screen">
+            <!-- Main title -->
+            <h1 class="title">Home</h1>
+            
+            <!-- Content and footer-->
+            <div class="content-bg">
+                <div class="arrow"></div>
+                <!-- Main content -->
+                <h3 class="main_text" style="margin: 50px; text-align: center;">Welcome to All by Our Shelves!</h3>
+                <div class="internal">
+                    <div class="row" style="margin-top: 50px;">
+                        <p class="main_text" style="min-width: 500px; text-align: center;">Tired of your boring moldy house? Want people to stay 
+                        instead of running away from all that ugliness? Then our shelves are the shelves
+                        for you! Our shelves are shelves that excel, not only in appearence, but in function, both 
+                        at the same time. These shelves are no ordinary shelves as their ability to store your valuables is far superior to any normal
+                        less-attractive household shelf. Our futuristic shelves have the ability to switch 
+                        between NOT 1 BUT 2 different display modes that is controlled wirelessly through
+                        an app on your phone! Buying our product is "guaranteed" to attract visitors with its extraordinary
+                        luxurious metallic surfaces. Just buy, install, and watch your friend list blast off as it
+                        goes <b>from absolute 0</b> to sky high amounts! This revolutionary technology is the jack of 
+                        all trades, designed for utility, display, and easability. Our goal is to give you a more convenient 
+                        life all by our shelves.</p>
+                        <img class="shelf_img" src="Images/shelf.jpeg" alt="shelf">
+                    </div>
+                </div>
+                <!-- Footer -->
+                <div class="footer">
+                    <a class="footer_button_border" target="_blank" href="https://www.dublin.k12.ca.us/dhs">
+                        <div class="footer_button_1">
+                            <img class="footer_button" src="Images/dublin_high_school_logo.png" alt="Dublin_high_school_icon">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        <div>
+    </body>
+</html>
