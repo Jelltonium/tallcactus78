@@ -110,10 +110,10 @@ html {
     z-index: -1;
     width: 100%;
     top: 70%;
-    background-color: #581a77;
+    background-color: #404040;
     min-height: 1500px;
     overflow: auto;
-    border-top: 3px solid #ba4fef;
+    border-top: 3px solid #02E63B;
     justify-content: center;
 }
 
@@ -147,7 +147,7 @@ html {
     height: 120px;
     width: 100%;
     text-align: center;
-    border-top: 3px solid #ba4fef;
+    border-top: 3px solid #404040;
     color: #FFF;
     display: flex;
     justify-content: space-around;
