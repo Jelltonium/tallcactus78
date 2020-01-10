@@ -279,7 +279,8 @@ html {
     height: 10000px;
     transform: rotate(-135deg);
     transform-origin: top left;
-    background-color: lightblue;
+    background-color: #0F0F0F;
+    border: 3px solid #02E63B;
 }
 .top1 {
     animation-name: top_square;
@@ -312,7 +313,8 @@ html {
     height: 10000px;
     transform: rotate(135deg);
     transform-origin: top left;
-    background-color: lightgreen;
+    background-color: #0F0F0F;
+    border: 3px solid #02E63B;
 }
 .left1 {
     animation-name: left_square;
@@ -345,7 +347,8 @@ html {
     height: 10000px;
     transform: rotate(-45deg);
     transform-origin: top left;
-    background-color: #ffffaa;
+    background-color: #0F0F0F;
+    border: 3px solid #02E63B;
     z-index:5;
 }
 .right1 {
@@ -379,7 +382,8 @@ html {
     height: 10000px;
     transform: rotate(45deg);
     transform-origin: top left;
-    background-color: pink;
+    background-color: #0F0F0F;
+    border: 3px solid #02E63B;
 }
 .bottom1 {
     animation-name: bottom_square;
