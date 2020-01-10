@@ -492,16 +492,16 @@ html {
   100% {left: 0px;visibility: visible;}
 }
 
-.link4 {
+.link5 {
   visibility: hidden;
   position: relative;
-  animation-name: link4;
+  animation-name: link5;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   animation-delay: 0.25s;
 }
-@keyframes link4 {
+@keyframes link5 {
   0% {left: -100%;}
   100% {left: 0px;visibility: visible;}
 }
