@@ -457,7 +457,7 @@ html {
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.75s;
+  animation-delay: 1s;
 }
 @keyframes link2 {
   0% {left: -100%;}
@@ -471,9 +471,23 @@ html {
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.5s;
+  animation-delay: 0.75s;
 }
 @keyframes link3 {
+  0% {left: -100%;}
+  100% {left: 0px;visibility: visible;}
+}
+
+.link4 {
+  visibility: hidden;
+  position: relative;
+  animation-name: link4;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+@keyframes link4 {
   0% {left: -100%;}
   100% {left: 0px;visibility: visible;}
 }
@@ -492,8 +506,7 @@ html {
   100% {left: 0px;visibility: visible;}
 }
 
-
-/*Contact us card animation*/
+/*Contact card animation*/
 .card {
     border: 0px solid #4597ef;
     position: relative;
