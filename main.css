@@ -28,8 +28,9 @@ html {
 
 /*actual buttons*/
 .nav-button.active {
-    background-color: #ba4fef;
+    background-color: #404040;
     color: #FFF;
+    border-color: #02E63B;
 }
 .nav-button {
     position: relative;
